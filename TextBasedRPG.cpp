@@ -1,21 +1,27 @@
-// TextBasedRPG.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+#include "TextBasedRPG.h"
 using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    cout << "Welcome to the most awesome text based rpg game you have ever played" << endl;
+    cout << "First, enter your age: " << endl;
+    cin >> ageInput;
+    if (ageInput <= 12) {
+        cout << "Hah, grow up little bitch! \n Whatever, you can play my fantastic game if you want..." << endl;
+    }
+    else if (ageInput < 18) {
+        cout << "Well well, couldn't you wait a few years? You might need an adult head if you wanna preavail in this game" << endl;
+    }
+    else if (ageInput == 18) {
+        cout << "Fuck you Csaba!" << endl;
+        isCsaba = true;
+    }
+    else if (ageInput <= 30) {
+        cout << "I hope you wil enjoy this game and have a great time!" << endl;
+    }
+    else {
+        cout << "what the fuck man? Why would you play this shit you old ass bitch? \n Ehh, forget it, and enjoy, i guess..." << endl;
+    }
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file

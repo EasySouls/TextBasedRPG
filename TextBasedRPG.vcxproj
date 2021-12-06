@@ -141,6 +141,9 @@
   <ItemGroup>
     <ClCompile Include="TextBasedRPG.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TextBasedRPG.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
