@@ -1,6 +1,10 @@
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 #include "TextBasedRPG.h"
 using namespace std;
+
+string introLines = "This is where your adventure starts. \n You wake up, dazzled, in a ruined building. You can't remember how you got there.";
 
 int main()
 {
@@ -23,5 +27,6 @@ int main()
     else {
         cout << "what the fuck man? Why would you play this shit you old ass bitch? \n Ehh, forget it, and enjoy, i guess..." << endl;
     }
+    cout << introLines << endl;
 }
 
