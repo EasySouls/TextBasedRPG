@@ -8,7 +8,6 @@ class Character
 public:
 	Character(string nm, int lvl, int atk, int hp, int res);
 	string GetName();
-private:
 	string name;
 	int level;
 	int attack;

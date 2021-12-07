@@ -1,10 +1,11 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <windows.h>
 #include "TextBasedRPG.h"
+#include "Character.h"
+#include "NPC.h"
 using namespace std;
-
-string introLines = "This is where your adventure starts. \n You wake up, dazzled, in a ruined building. You can't remember how you got there.";
 
 int main()
 {
@@ -15,7 +16,7 @@ int main()
         cout << "Hah, grow up little bitch! \n Whatever, you can play my fantastic game if you want..." << endl;
     }
     else if (ageInput < 18) {
-        cout << "Well well, couldn't you wait a few years? You might need an adult head if you wanna preavail in this game" << endl;
+        cout << "Well well, couldn't you wait a few years? You might need an adult head if you wanna prevail in this game" << endl;
     }
     else if (ageInput == 18) {
         cout << "Fuck you Csaba!" << endl;
@@ -28,5 +29,11 @@ int main()
         cout << "what the fuck man? Why would you play this shit you old ass bitch? \n Ehh, forget it, and enjoy, i guess..." << endl;
     }
     cout << introLines << endl;
+    Sleep(1000);
+    cout << "Type your name:   ";
+    cin >> playerName;
+    cout << "\n Your name is " << playerName << endl;
+    
+
 }
 
