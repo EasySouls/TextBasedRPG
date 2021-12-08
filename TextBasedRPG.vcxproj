@@ -141,12 +141,16 @@
   <ItemGroup>
     <ClCompile Include="Character.cpp" />
     <ClCompile Include="NPC.cpp" />
+    <ClCompile Include="Tavern.cpp" />
     <ClCompile Include="TextBasedRPG.cpp" />
+    <ClCompile Include="Town.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Character.h" />
     <ClInclude Include="NPC.h" />
+    <ClInclude Include="Tavern.h" />
     <ClInclude Include="TextBasedRPG.h" />
+    <ClInclude Include="Town.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

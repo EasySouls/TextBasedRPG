@@ -10,7 +10,7 @@ using namespace std;
 int main()
 {
     // Intro lines and player name selection
-    cout << "Welcome to the most awesome text based rpg game you have ever played" << endl;
+    /*cout << "Welcome to the most awesome text based rpg game you have ever played" << endl;
     cout << "First, enter your age: " << endl;
     cin >> ageInput;
     if (ageInput <= 12) {
@@ -28,15 +28,17 @@ int main()
     }
     else {
         cout << "what the fuck man? Why would you play this shit you old ass bitch? \n Ehh, forget it, and enjoy, i guess..." << endl;
-    }
+    }*/
     cout << introLines << endl;
     Sleep(1000);
     cout << "Type your name:   ";
     cin >> playerName;
-    cout << "\n Your name is " << playerName << endl;
+    cout << "Your name is " << playerName << endl;
     
     // Player character instantiated
     Character player(playerName, 1, 3, 10, 0);
 
+    //TODO Add other lines 
+    DecideAction();
 }
 
