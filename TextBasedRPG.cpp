@@ -9,6 +9,7 @@ using namespace std;
 
 int main()
 {
+    // Intro lines and player name selection
     cout << "Welcome to the most awesome text based rpg game you have ever played" << endl;
     cout << "First, enter your age: " << endl;
     cin >> ageInput;
@@ -34,6 +35,8 @@ int main()
     cin >> playerName;
     cout << "\n Your name is " << playerName << endl;
     
+    // Player character instantiated
+    Character player(playerName, 1, 3, 10, 0);
 
 }
 
