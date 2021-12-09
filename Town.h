@@ -7,10 +7,10 @@ class Town
 {
 public:
 	Town(string townName);
+	void ChooseAction();
 	void GoToTavern();
 	void GoToBlacksmith();
-	void GoAdventuring();
-protected:
+	void goAdventuring();
 	string name;
 };
 

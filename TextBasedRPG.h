@@ -18,6 +18,9 @@ void GoToTown()
 {
 	cout << "You are going to the town." << endl;
 	Town town("Avalor");
+	Sleep(500);
+	cout << "As you walk amongst the walls of " << town.name << ", you admire the variety of the city." << endl;
+	cout << "When you reach the main square, you see a blacksmith and a tavern." << endl;
 
 }
 
