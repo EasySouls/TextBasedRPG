@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include  "Town.h"
 using namespace std;
 
 // Strings
@@ -16,6 +17,8 @@ bool isCsaba = false;
 void GoToTown()
 {
 	cout << "You are going to the town." << endl;
+	Town town("Avalor");
+
 }
 
 void GoAdventuring()

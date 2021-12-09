@@ -11,3 +11,15 @@ void Tavern::DefDrinks(string tavernDrinks[])
 		drinks[i] = tavernDrinks[i];
 	}
 }
+
+void Tavern::ChooseDrink()
+{
+	DefDrinks({});
+	// Choosing a drink
+}
+
+void Tavern::SpeakWithBartender()
+{
+	NPC bartender("The bartender");
+	cout << "You go to speak to the bartender" << endl;
+}

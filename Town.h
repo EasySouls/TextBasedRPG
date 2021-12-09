@@ -7,6 +7,9 @@ class Town
 {
 public:
 	Town(string townName);
+	void GoToTavern();
+	void GoToBlacksmith();
+	void GoAdventuring();
 protected:
 	string name;
 };
