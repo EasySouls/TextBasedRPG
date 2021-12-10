@@ -8,11 +8,25 @@ Town::Town(string townName)
 void Town::GoToTavern()
 {
 	Tavern tavern("The Golden Sturgeon");
-	cout << "You stepped in the tavern. What do you want to do?" << endl;
-	//options monologue
+	NPC bartender("Gideon");
+	cout << "You stepped in the " << tavern.name << ".What do you want to do ? " << endl;
+	cout << "Type '1' if you want to talk to the bartender." << endl;
+	cout << "type '2' if you want to sit down to a table." << endl;
 	int option;
 	cin >> option;
-	// add switch statement!
+	switch (option)
+	{
+	case 1:
+		cout << "You step to the counter and greet the bartender." << endl;
+		cout << bartender.Greet() << " -- the bartender says." << endl;
+		break;
+	case 2:
+		cout << "You pick a nice table and sit down to it." << endl;
+		// table functions
+		break;
+	default:
+		GoToTavern();
+	}
 }
 
 void Town::GoToBlacksmith()
@@ -20,7 +34,7 @@ void Town::GoToBlacksmith()
 	cout << "You are going to the blacksmith." << endl;
 }
 
-void goAdventuring()
+void Town::GoAdventuring()
 {
 	cout << "You are going adventuring." << endl;
 }
@@ -42,7 +56,7 @@ void Town::ChooseAction()
 		GoToBlacksmith();
 		break;
 	case 3:
-		goAdventuring();
+		GoAdventuring();
 		break;
 	default:
 		cout << "Sadly, that is not a valid action." << endl;

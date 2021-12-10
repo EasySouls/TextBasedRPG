@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include "Tavern.h"
+#include "NPC.h"
 using namespace std;
 
 class Town
@@ -10,7 +11,7 @@ public:
 	void ChooseAction();
 	void GoToTavern();
 	void GoToBlacksmith();
-	void goAdventuring();
+	void GoAdventuring();
 	string name;
 };
 
