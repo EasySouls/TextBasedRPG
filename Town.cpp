@@ -18,7 +18,7 @@ void Town::GoToTavern()
 	{
 	case 1:
 		cout << "You step to the counter and greet the bartender." << endl;
-		cout << bartender.Greet() << " -- the bartender says." << endl;
+		cout << bartender.Greet() << " - says the bartender." << endl;
 		break;
 	case 2:
 		cout << "You pick a nice table and sit down to it." << endl;

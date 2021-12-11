@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <Windows.h>
 #include  "Town.h"
 using namespace std;
 
@@ -26,7 +27,7 @@ void GoToTown()
 
 void GoAdventuring()
 {
-	cout << "You are going adventuring" << endl;
+	cout << "You are going adventuring." << endl;
 }
 
 void DecideAction()
@@ -51,5 +52,19 @@ void DecideAction()
 	}
 }
 
+void SetTextColorRed()
+{
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_RED | FOREGROUND_INTENSITY);
+} // Intensive red text color
+
+void SetTextColorGreen()
+{
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_GREEN | FOREGROUND_INTENSITY);
+} // Intensive green text color
+
+void SetTextColorNormal()
+{
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_GREEN | FOREGROUND_RED | FOREGROUND_BLUE);
+} // Normal text color
 
 

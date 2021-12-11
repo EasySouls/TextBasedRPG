@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Character.cpp" />
+    <ClCompile Include="Item.cpp" />
     <ClCompile Include="NPC.cpp" />
     <ClCompile Include="Tavern.cpp" />
     <ClCompile Include="TextBasedRPG.cpp" />
@@ -147,6 +148,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Character.h" />
+    <ClInclude Include="Item.h" />
     <ClInclude Include="NPC.h" />
     <ClInclude Include="Tavern.h" />
     <ClInclude Include="TextBasedRPG.h" />
