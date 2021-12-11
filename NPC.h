@@ -7,6 +7,6 @@ class NPC
 public:
 	NPC(string charName);
 	string name;
-	void Greet();
+	string Greet();
 };
 
