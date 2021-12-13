@@ -35,11 +35,31 @@ int main()
     cin >> playerName;
     cout << "Your name is " << playerName << endl;
     
-    // Player character instantiated
-    Character player(playerName, 1, 3, 10, 0);
+    // Choosing class
+    cout << "Choose your character class. \n[1] Warrior [2] Mage [3] Archer [4] Rogue: ";
+    int classChoice;
+    cin >> classChoice;
+    while (!cin >> classChoice || classChoice > 4 || classChoice < 1) {
+        cout << "Not a valid choice. \nChoose your character class. \n[1] Warrior [2] Mage [3] Archer [4] Rogue : ";
+        cin >> classChoice;
+    }
+
+    cout << "Choose your race. \n[1] Human [2] Elf [3] Dwarf: ";
+    int raceChoice;
+    cin >> raceChoice;
+    while (!cin >> raceChoice || raceChoice > 3 || raceChoice < 1) {
+        cout << "Not a valid choice. \nChoose your character class. \n[1] Warrior [2] Mage [3] Archer [4] Rogue : ";
+        cin >> raceChoice;
+    }
+
+    // Player character initialization
+    Character playerCharacter(playerName, classChoice, raceChoice);
+    cout << "\nWelcome " << playerCharacter.GetName() << " [" << playerCharacter.GetPlayerClass() << "] . Let's begin your adventure." << endl;
 
     //TODO Add other lines 
     DecideAction();
+
+    Sleep(3000);
     
 }
 

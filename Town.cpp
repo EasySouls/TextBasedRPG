@@ -9,7 +9,7 @@ void Town::GoToTavern()
 {
 	Tavern tavern("The Golden Sturgeon");
 	NPC bartender("Gideon");
-	cout << "You stepped in the " << tavern.name << ".What do you want to do ? " << endl;
+	cout << "You stepped in the " << tavern.name << " .What do you want to do ? " << endl;
 	cout << "Type '1' if you want to talk to the bartender." << endl;
 	cout << "type '2' if you want to sit down to a table." << endl;
 	int option;
