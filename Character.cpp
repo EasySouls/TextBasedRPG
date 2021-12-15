@@ -5,10 +5,12 @@ using namespace std;
 
 Character::Character(string nm, int classChoice, int raceChoice)
 {
+	name = nm;
+
 	// Class selector
 	if (classChoice == 1)
 	{
-		playerClass == "Warrior";
+		playerClass = "Warrior";
 		level = 1;
 		health = 16;
 		mana = 4;
@@ -22,7 +24,7 @@ Character::Character(string nm, int classChoice, int raceChoice)
 	}
 	else if (classChoice == 2)
 	{
-		playerClass == "Mage";
+		playerClass = "Mage";
 		level = 1;
 		health = 12;
 		mana = 10;
@@ -36,7 +38,7 @@ Character::Character(string nm, int classChoice, int raceChoice)
 	}
 	else if (classChoice == 3)
 	{
-		playerClass == "Archer";
+		playerClass = "Archer";
 		level = 1;
 		health = 13;
 		mana = 7;
@@ -50,7 +52,7 @@ Character::Character(string nm, int classChoice, int raceChoice)
 	}
 	else if (classChoice == 4)
 	{
-		playerClass == "Rogue";
+		playerClass = "Rogue";
 		level = 1;
 		health = 14;
 		mana = 5;
