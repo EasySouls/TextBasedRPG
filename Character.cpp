@@ -85,12 +85,12 @@ string Character::GetName()
 	return name;
 }
 
-string Character::GetPlayerClass()
+string Character::GetClass()
 {
 	return playerClass;
 }
 
-string Character::GetPlayerRace()
+string Character::GetRace()
 {
 	return playerRace;
 }

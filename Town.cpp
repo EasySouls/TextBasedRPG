@@ -6,6 +6,7 @@ Town::Town(string townName)
 	: name(townName) {}
 
 void Town::GoToTavern()
+
 {
 	Tavern tavern("The Golden Sturgeon");
 	NPC bartender("Gideon");

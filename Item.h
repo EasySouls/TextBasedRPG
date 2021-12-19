@@ -8,6 +8,5 @@ public:
 	Item(string name);
 protected:
 	string name;
-	virtual void Use();
 };
 

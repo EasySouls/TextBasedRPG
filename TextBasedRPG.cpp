@@ -54,7 +54,7 @@ int main()
 
     // Player character initialization
     Character playerCharacter(playerName, classChoice, raceChoice);
-    cout << "\nWelcome " << playerCharacter.GetName() << " [" << playerCharacter.GetPlayerClass() << "]. Let's begin your adventure." << endl;
+    cout << "\nWelcome " << playerCharacter.GetName() << " [" << playerCharacter.GetClass() << "]. Let's begin your adventure." << endl;
 
     //TODO Add other lines 
     DecideAction();

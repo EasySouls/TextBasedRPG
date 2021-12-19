@@ -12,8 +12,8 @@ class Character
 public:
 	Character(string nm, int classChoice, int raceChoice);
 	string GetName();
-	string GetPlayerClass();
-	string GetPlayerRace();
+	string GetClass();
+	string GetRace();
 
 	// Attributes
 	string name;
