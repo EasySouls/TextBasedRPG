@@ -1,7 +1,12 @@
 #pragma once
 #include <string>
 #include <Windows.h>
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
 #include  "Town.h"
+#include "Character.h"
+#include "Equippable.h"
 using namespace std;
 
 // Strings

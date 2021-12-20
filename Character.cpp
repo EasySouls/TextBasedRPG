@@ -80,6 +80,11 @@ Character::Character(string nm, int classChoice, int raceChoice)
 	}
 }
 
+void Character::ShowAttributes()
+{
+	cout << endl << "Your attributes are: \nStrength: " << strength << ",\nDexterity: " << dexterity << ",\nCnstitution: " << constitution << ",\nIntelligence: " << intelligence << ",\nWisdom: " << wisdom << ",\nCharisma: " << charisma << endl;
+}
+
 string Character::GetName()
 {
 	return name;

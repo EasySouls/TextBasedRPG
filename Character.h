@@ -1,6 +1,11 @@
 #pragma once
 #include <string>
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <windows.h>
+#include "NPC.h"
+#include "Character.h"
 using namespace std;
 
 class Character
@@ -14,6 +19,7 @@ public:
 	string GetName();
 	string GetClass();
 	string GetRace();
+	void ShowAttributes();
 
 	// Attributes
 	string name;

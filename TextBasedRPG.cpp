@@ -1,11 +1,12 @@
-#include <iostream>
-#include <cstdlib>
-#include <ctime>
-#include <windows.h>
 #include "TextBasedRPG.h"
-#include "Character.h"
-#include "NPC.h"
-using namespace std;
+
+void WaitInput()
+{
+    cout << "" << endl;
+    cout << "____________________________________________________________" << endl;
+    system("pause");
+    cout << endl;
+}
 
 int main()
 {
@@ -30,8 +31,8 @@ int main()
         cout << "what the fuck man? Why would you play this shit you old ass bitch? \n Ehh, forget it, and enjoy, i guess..." << endl;
     }*/
     cout << introLines << endl;
-    Sleep(1000);
-    cout << "Type your name:   ";
+    Sleep(500);
+    cout << "Type your name: ";
     cin >> playerName;
     cout << "Your name is " << playerName << endl;
     
@@ -54,7 +55,10 @@ int main()
 
     // Player character initialization
     Character playerCharacter(playerName, classChoice, raceChoice);
-    cout << "\nWelcome " << playerCharacter.GetName() << " [" << playerCharacter.GetClass() << "]. Let's begin your adventure." << endl;
+    cout << "\nWelcome " << playerCharacter.GetName() << " [" << playerCharacter.GetClass() << "]." << endl;
+    playerCharacter.ShowAttributes();
+    cout << "Let's begin your adventure." << endl;
+    WaitInput();
 
     //TODO Add other lines 
     DecideAction();
@@ -62,4 +66,6 @@ int main()
     Sleep(3000);
     
 }
+
+
 
