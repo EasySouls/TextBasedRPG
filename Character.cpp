@@ -5,16 +5,13 @@ using namespace std;
 
 Character::Character(string nm, int classChoice, int raceChoice)
 {
-	name = nm;
+	this.name = nm;
 
 	// Class selector
 	if (classChoice == 1)
 	{
 		playerClass = "Warrior";
 		level = 1;
-		health = 16;
-		mana = 4;
-		armor = 0;
 		strength = 15;
 		dexterity = 11;
 		constitution = 14;
@@ -26,9 +23,6 @@ Character::Character(string nm, int classChoice, int raceChoice)
 	{
 		playerClass = "Mage";
 		level = 1;
-		health = 12;
-		mana = 10;
-		armor = 0;
 		strength = 10;
 		dexterity = 13;
 		constitution = 14;
@@ -40,9 +34,6 @@ Character::Character(string nm, int classChoice, int raceChoice)
 	{
 		playerClass = "Archer";
 		level = 1;
-		health = 13;
-		mana = 7;
-		armor = 0;
 		strength = 12;
 		dexterity = 16;
 		constitution = 14;
@@ -54,9 +45,6 @@ Character::Character(string nm, int classChoice, int raceChoice)
 	{
 		playerClass = "Rogue";
 		level = 1;
-		health = 14;
-		mana = 5;
-		armor = 0;
 		strength = 14;
 		dexterity = 16;
 		constitution = 13;
@@ -69,15 +57,39 @@ Character::Character(string nm, int classChoice, int raceChoice)
 	if (raceChoice == 1)
 	{
 		playerRace = "Human";
+		charisma++;
+		intelligence++;
 	}
 	else if (raceChoice == 2)
 	{
 		playerRace = "Elf";
+		dexterity++;
+		wisdom++;
 	}
 	else if (raceChoice == 3)
 	{
 		playerRace = "Dwarf";
+		constitution++;
+		strength++;
 	}
+
+	// Stats based on base stats
+	this.health = 10 + (constitution / 2);
+	this.armor = 6 + (dexterity / 2);
+	
+	if (strength >= dexterity) {
+		this.attack = 8 + (strength / 2);
+	} if else (dexterity >= strength) {
+		this.attack = 8 + (dexterity / 2);
+	}
+
+	if (intelligence >= wisdom) {
+		mana = 1 + (intelligence / 3);
+	} if else (wisdom >= intelligence) {
+		mana = 1 + (wisdom / 3);
+	}
+
+
 }
 
 void Character::ShowAttributes()
